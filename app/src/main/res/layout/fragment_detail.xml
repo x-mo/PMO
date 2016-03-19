@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context="net.gogetout.pmo.DetailActivityFragment"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#009688"
+            android:elevation="6dp"
+            android:gravity="center_vertical"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/occasion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="@dimen/activity_vertical_margin"
+                android:text="Wedding Ceremony"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="56sp" />
+
+        </LinearLayout>
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/image_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/d1"></ImageView>
+
+                <ImageView
+                    android:id="@+id/image_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/d2"></ImageView>
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:text="Vote"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:text="Vote"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Skinny Jeans"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Skirt"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow
+                >
+
+                <TextView
+                    android:padding="3dip"
+                    android:layout_weight="1"
+                    android:text="Competition Item 1 description is here" />
+
+                <TextView
+                    android:padding="3dip"
+                    android:layout_weight="1"
+                    android:text="Competition Item 2 description is here" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Team Skinny Jeans"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Team Skirt"
+                    android:layout_weight="1"/>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="boxes1"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="boxes2"
+                    android:layout_weight="1"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
